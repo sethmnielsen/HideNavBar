@@ -134,9 +134,9 @@ fi
 if [ "$API" -ge 30 ] ; then
      cat "$LNG"5.txt
      if $VKSEL; then
-     DBG=true
-     else
      DBG=false
+     else
+     DBG=true
      settings delete secure back_gesture_inset_scale_left &>/dev/null
      settings delete secure back_gesture_inset_scale_right &>/dev/null
      fi
